@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Arrafi - Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html { scroll-behavior: smooth }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .animate { animation: fadeUp .9s ease-in-out }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+<!-- Navbar -->
+<header class="fixed top-0 w-full z-40 bg-slate-900/80 backdrop-blur-xl border-b border-cyan-400/20 shadow-lg">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+    <h1 class="font-extrabold text-2xl text-cyan-400 tracking-wide">RafDev<span class="text-white">.</span></h1>
+
+    <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+      <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+      <a href="#profile" class="hover:text-cyan-400 transition">Profile</a>
+      <a href="#project" class="hover:text-cyan-400 transition">Project</a>
+      <a href="#media" class="hover:text-cyan-400 transition">Media</a>
+      <a href="#informasi" class="hover:text-cyan-400 transition">Informasi</a>
+      <a href="#kontak" class="hover:text-cyan-400 transition">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="pt-32 pb-20 text-center animate max-w-6xl mx-auto px-6">
+  <div class="relative flex justify-center">
+    <div class="absolute w-64 h-64 bg-cyan-500 blur-[100px] opacity-20 rounded-full"></div>
+    <img src="4.jpeg" class="relative mx-auto w-44 h-44 object-cover rounded-full border-4 border-cyan-400 shadow-xl shadow-cyan-500/30" alt="Profile"/>
+  </div>
+
+  <h2 class="text-5xl font-extrabold mt-6">
+    Halo! Saya <span class="text-cyan-400">Muhamad Arrafi</span>
+  </h2>
+  <p class="text-slate-400 mt-4 text-lg">Mahasiswa Sistem Informasi • Web Developer • Programmer</p>
+
+  <div class="mt-6 flex justify-center gap-4">
+    <a href="#project" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 rounded-xl shadow-lg shadow-cyan-500/30 text-black font-bold transition">Lihat Project</a>
+    <a href="#kontak" class="px-6 py-3 border border-slate-600 hover:border-cyan-400 rounded-xl transition">Hubungi Saya</a>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="py-16 max-w-6xl mx-auto px-6">
+  <h3 class="text-3xl font-extrabold text-center mb-6">Profile</h3>
+  <div class="bg-slate-900 border border-slate-700 rounded-2xl p-7 shadow-xl hover:border-cyan-400/40 transition">
+    <p class="text-slate-300 leading-relaxed">
+      Saya Muhamad Arrafi, mahasiswa Sistem Informasi Universitas Pamulang dengan passion di bidang teknologi dan pengembangan website.
+      Saya telah membuat beberapa project seperti Website Toko Buku Online dan Website Coffee Shop.
+      Saya juga memiliki pengalaman kerja di PT Sinar Sosro sebagai Admin Teknisi yang membentuk saya menjadi pribadi yang profesional,
+      bertanggung jawab, dan siap berkembang.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" class="py-16 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-extrabold text-center mb-10">Project</h3>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-400/40 hover:-translate-y-1 transition shadow-xl">
+      <img src="buku.png" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <i class="fa-solid fa-globe text-3xl text-cyan-400 mb-2"></i>
+        <h4 class="text-xl font-bold">Website Toko Buku</h4>
+        <p class="text-slate-400 text-sm mt-1">E-commerce sederhana berbasis web</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden hover:border-pink-400/40 hover:-translate-y-1 transition shadow-xl">
+      <img src="kopi.png" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <i class="fa-solid fa-mug-hot text-3xl text-rose-400 mb-2"></i>
+        <h4 class="text-xl font-bold">Website Coffee Shop</h4>
+        <p class="text-slate-400 text-sm mt-1">Website modern & aesthetic</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden hover:border-yellow-400/40 hover:-translate-y-1 transition shadow-xl">
+      <img src="unpam.png" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <i class="fa-solid fa-code text-3xl text-yellow-400 mb-2"></i>
+        <h4 class="text-xl font-bold">Universitas Pamulang</h4>
+        <p class="text-slate-400 text-sm mt-1">Website Universitas Pamulang</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MEDIA BARU -->
+<section id="media" class="py-16 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-extrabold text-center mb-8">Media</h3>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
+
+    <div onclick="openMedia(this)" class="group cursor-pointer relative bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:-translate-y-1 hover:border-cyan-400/40 transition">
+      <img src="11.jpeg" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+        <p class="text-sm text-cyan-300">Dokumentasi Kegiatan</p>
+      </div>
+    </div>
+
+    <div onclick="openMedia(this)" class="group cursor-pointer relative bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:-translate-y-1 hover:border-cyan-400/40 transition">
+      <img src="WhatsApp Image 2025-12-27 at 14.10.06 (1).jpeg" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+        <p class="text-sm text-cyan-300">Kegiatan & Dokumentasi</p>
+      </div>
+    </div>
+
+    <div onclick="openMedia(this)" class="group cursor-pointer relative bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:-translate-y-1 hover:border-cyan-400/40 transition">
+      <img src="10.jpeg" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+        <p class="text-sm text-cyan-300">Galeri Pribadi</p>
+      </div>
+    </div>
+
+    <div onclick="openMedia(this)" class="group cursor-pointer relative bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:-translate-y-1 hover:border-cyan-400/40 transition">
+      <img src="WhatsApp Image 2025-12-27 at 14.10.06.jpeg" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+        <p class="text-sm text-cyan-300">Portfolio Media</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP MEDIA -->
+<div id="mediaPopup" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-50">
+  <img id="popupImg" class="max-w-3xl w-auto rounded-2xl border border-cyan-400 shadow-2xl">
+</div>
+
+<script>
+function openMedia(card){
+  document.getElementById("mediaPopup").classList.remove("hidden");
+  document.getElementById("popupImg").src = card.querySelector("img").src;
+}
+document.getElementById("mediaPopup").onclick = () =>
+  document.getElementById("mediaPopup").classList.add("hidden");
+</script>
+
+<!-- INFORMASI -->
+<section id="informasi" class="py-16 max-w-6xl mx-auto px-6">
+  <h3 class="text-3xl font-extrabold text-center mb-8">Informasi</h3>
+  <div class="bg-slate-900 border border-slate-700 rounded-2xl p-7 text-center hover:border-cyan-400/40 transition">
+    <p class="text-slate-300 leading-relaxed">
+      Saat ini saya fokus mengembangkan kemampuan Web Development,
+      terutama PHP, MySQL, dan Tailwind CSS. Saya berkomitmen untuk terus belajar,
+      meningkatkan kualitas desain, serta membangun lebih banyak project bermanfaat.
+      Jika tertarik bekerja sama atau membutuhkan website, saya siap berdiskusi 😊
+    </p>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-20 max-w-6xl mx-auto px-6">
+  <div class="bg-slate-900/80 border border-slate-700 rounded-3xl p-10 shadow-xl text-center">
+    <h3 class="text-4xl font-bold mb-4">Kontak</h3>
+    <p class="text-slate-400 mb-8">Hubungi saya di platform berikut 👇</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <a href="https://wa.me/6289613556444" target="_blank" class="group bg-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-green-400/40 transition">
+        <i class="fa-brands fa-whatsapp text-4xl text-green-400 mb-3"></i>
+        <h4 class="text-xl font-semibold">WhatsApp</h4>
+        <p class="text-slate-400 text-sm mt-1">Chat langsung</p>
+      </a>
+
+      <a href="https://instagram.com/arrrfi" target="_blank" class="group bg-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-pink-400/40 transition">
+        <i class="fa-brands fa-instagram text-4xl text-pink-400 mb-3"></i>
+        <h4 class="text-xl font-semibold">Instagram</h4>
+        <p class="text-slate-400 text-sm mt-1">Ikuti aktivitas saya</p>
+      </a>
+
+      <a href="https://tiktok.com/@lemonmengkudu" target="_blank" class="group bg-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-white/40 transition">
+        <i class="fa-brands fa-tiktok text-4xl text-white mb-3"></i>
+        <h4 class="text-xl font-semibold">TikTok</h4>
+        <p class="text-slate-400 text-sm mt-1">Konten kreatif</p>
+      </a>
+    </div>
+
+    <p class="text-slate-500 mt-8 text-sm">
+      Email: <span class="text-cyan-400">muhamadarrafi29@gmail.com</span>
+    </p>
+  </div>
+</section>
+
+<footer class="py-6 text-center border-t border-slate-700 text-slate-500">
+  © 2025 Portfolio — Muhamad Arrafi
+</footer>
+
+</body>
+</html>
